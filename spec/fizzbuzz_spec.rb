@@ -20,5 +20,11 @@ describe FizzBuzz do
       expect(number.output).to eq("Buzz")
     end
   end
+  context 'when five and three is passed' do
+    it 'is number fizzbuzz' do
+      number = FizzBuzz.new(15)
+      expect(number.output).to eq("FizzBuzz")
+    end
+  end
 
 end

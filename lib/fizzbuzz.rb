@@ -8,6 +8,7 @@ class FizzBuzz
  
 	def output
   	collector = fizz
+  	collector << buzz
   	collector.empty? ? number.to_s : collector
  	end
 
@@ -15,8 +16,8 @@ class FizzBuzz
  		(number % 3 == 0) ? 'Fizz' : ''
  	end
 
- 	def buzz?
-
+ 	def buzz
+ 		(number % 5 == 0) ? 'Buzz' : ''
  	end
 
 end
