@@ -5,7 +5,7 @@ class FizzBuzz
   def initialize(number)
     @number = number
   end
- 
+
 	def output
   	collector = fizz
   	collector << buzz
@@ -21,3 +21,5 @@ class FizzBuzz
  	end
 
 end
+
+(1..100).each do |num| puts FizzBuzz.new(num).output end
